@@ -59,7 +59,7 @@ class ResourceServerMiddleware
       if (isset($customJson)){
         foreach($customJson as $item) {
 
-          if (isset($claims->{$item})) $claims->{str_replace(':','',$item)} = json_decode(base64_decode($claims->{$item}));
+          if (isset($claims->{$item})) $claims->{str_replace(':','',$item)} = json_decode(base64_decode($claims->{$item}), true);
         }
       }
 
