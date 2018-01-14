@@ -1,8 +1,9 @@
 {
-    "name": "clint.davis/aws-cognito-jwt-php",
-    "description": "A simple library to decode cognito JWT tokens in PHP, leverages the Jwk and decodes based on the kid",
+    "name": "clintdavis/cognitojwt",
+    "description": "A simple library to decode cognito JWT tokens in PHP using the JWK in cognito with caching",
     "type": "library",
     "license": "BSD-3-Clause",
+    "homepage": "https://github.com/ClintDavis/aws-cognito-jwt-php",
     "authors": [
         {
             "name": "Clint Davis",
@@ -11,11 +12,10 @@
     ],
     "autoload": {
         "psr-4": {
-            "Clint.Davis\\JWT\\": "src"
+            "ClintDavis\\CognitoJwt\\": "src"
         }
     },
     "require": {
-        "php": ">=5.3.0",
         "guzzlehttp/guzzle": "~6.0",
     		"kevinrob/guzzle-cache-middleware": "^3.2",
     		"doctrine/cache": "^1.6"
